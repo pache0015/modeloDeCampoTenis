@@ -11,8 +11,6 @@ import clases.Jugador;
 import clases.Marcador;
 
 
-
-
 class CampoDeJuego {
 
 	private Campo campo;
@@ -38,6 +36,8 @@ class CampoDeJuego {
 		assertEquals((Integer)0, marcador.puntajeDelSacador());
 	}
 	
+	
+	
 	@Test
 	void SacadorLeHacePuntoAReceptor() {
 		jugador1.sumarPunto();
@@ -57,17 +57,20 @@ class CampoDeJuego {
 		assertEquals((Integer)15, marcador.puntajeDelReceptor());
 	}
 	@Test
-	void x() {
+	void DosJugadoresVan40Iguales() {
 		
 			campo.puntoParaElSacador();
-			//campo.puntoParaElReceptor();
+			campo.puntoParaElReceptor();
 			campo.puntoParaElSacador();
-			//campo.puntoParaElReceptor();
+			campo.puntoParaElReceptor();
 			campo.puntoParaElSacador();
-			//campo.puntoParaElReceptor();
+			campo.puntoParaElReceptor();
+			
+			
+			//PROXIMAMENTE DEUCE
 		
 		assertEquals((Integer)40, marcador.puntajeDelSacador());
-		//assertEquals((Integer)40, marcador.puntajeDelReceptor());
+		assertEquals((Integer)40, marcador.puntajeDelReceptor());
 	}
 
 }

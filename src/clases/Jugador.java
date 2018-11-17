@@ -9,7 +9,7 @@ public class Jugador {
 	}
 	
 	public void sumarPunto() {
-		puntaje.puntoSiguiente();
+		this.puntaje = puntaje.puntoSiguiente();
 	}
 	
 	public Integer puntaje() {
