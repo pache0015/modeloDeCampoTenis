@@ -33,11 +33,15 @@ class CampoDeJuego {
 		 campo = new Campo(marcador);
 	}
 	
+	@Test 
+	void UnjugadorComienzaCon0Puntos() {
+		assertEquals((Integer)0, marcador.puntajeDelSacador());
+	}
 	
 	@Test
 	void SacadorLeHacePuntoAReceptor() {
-		campo.puntoParaElSacador();
-		assertEquals((Integer)15, marcador.puntajeDelSacador());
+		jugador1.sumarPunto();
+		assertEquals((Integer)15, jugador1.puntaje());
 	}
 	@Test
 	void ReceptorLeHacePuntoASacador() {

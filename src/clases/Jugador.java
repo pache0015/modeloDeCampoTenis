@@ -2,16 +2,17 @@ package clases;
 
 public class Jugador {
 
-	private Integer puntaje;
+	private Punto puntaje;
 	
 	public Jugador() {
-		this.puntaje = 0;
+		this.puntaje = new Punto0();
 	}
 	
 	public void sumarPunto() {
-		this.puntaje += 15;
+		puntaje.puntoSiguiente();
 	}
+	
 	public Integer puntaje() {
-		return this.puntaje;
+		return puntaje.valor();
 	}
 }
