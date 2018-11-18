@@ -2,11 +2,11 @@ package clases;
 
 public abstract class Punto {
 
-	private Integer valor;
+	private String valor;
 	
 	public abstract Punto puntoSiguiente();
 	
-	public Integer valor() {
+	public String valor() {
 		return valor;
 	}
 }

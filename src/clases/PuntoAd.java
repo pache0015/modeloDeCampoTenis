@@ -1,13 +1,12 @@
 package clases;
 
-public class Punto40 extends Punto {
+public class PuntoAd extends Punto {
 
-	private String valor = "40";
+	private String valor = "AD";
 	
-	public Punto40() {
+	public PuntoAd() {
 		
 	}
-	
 	@Override
 	public Punto puntoSiguiente() {
 		return new Punto0();
@@ -15,8 +14,8 @@ public class Punto40 extends Punto {
 	public Punto puntoSiguienteDeuce() {
 		return new PuntoDeuce();
 	}
-	public String valor() {
-		return valor;
-	}
 
+	public String valor() {
+		return this.valor;
+	}
 }

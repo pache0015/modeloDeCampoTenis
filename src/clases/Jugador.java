@@ -8,11 +8,14 @@ public class Jugador {
 		this.puntaje = new Punto0();
 	}
 	
-	public void sumarPunto() {
-		this.puntaje = puntaje.puntoSiguiente();
+	public void sumarPunto(Punto punto) {
+		this.puntaje = punto;
 	}
 	
-	public Integer puntaje() {
+	public String valorPuntaje() {
 		return puntaje.valor();
+	}
+	public Punto puntaje() {
+		return puntaje;
 	}
 }

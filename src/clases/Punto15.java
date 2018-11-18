@@ -2,7 +2,7 @@ package clases;
 
 public class Punto15 extends Punto {
 
-	private Integer valor = 15;
+	private String valor = "15";
 	
 	public Punto15() {
 		
@@ -13,7 +13,7 @@ public class Punto15 extends Punto {
 		return new Punto30();
 	}
 
-	public Integer valor() {
+	public String valor() {
 		return valor;
 	}
 }
